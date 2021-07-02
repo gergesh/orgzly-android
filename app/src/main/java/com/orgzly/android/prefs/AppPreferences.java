@@ -407,6 +407,21 @@ public class AppPreferences {
     }
 
     /*
+     * Inline editor.
+     */
+
+    public static boolean isUseInlineEditor(Context context) {
+        return getDefaultSharedPreferences(context).getBoolean(
+                context.getResources().getString(R.string.pref_key_use_inline_editor),
+                context.getResources().getBoolean(R.bool.pref_default_use_inline_editor));
+    }
+
+    public static void isUseInlineEditor(Context context, boolean value) {
+        String key = context.getResources().getString(R.string.pref_key_use_inline_editor);
+        getDefaultSharedPreferences(context).edit().putBoolean(key, value).apply();
+    }
+
+    /*
      * Click action.
      */
 
