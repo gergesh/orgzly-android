@@ -6,6 +6,12 @@
     android:title="@string/look_and_feel">
 
     <SwitchPreference
+        android:key="@string/pref_key_use_inline_editor"
+        android:title="@string/use_inline_editor"
+        android:summary="@string/use_inline_editor_summary"
+        android:defaultValue="@bool/pref_default_use_inline_editor"/>
+
+    <SwitchPreference
         android:key="@string/pref_key_is_reverse_click_action"
         android:title="@string/reversed_note_click_action"
         android:summary="@string/reversed_note_click_action_summary"
