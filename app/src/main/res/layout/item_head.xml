@@ -79,7 +79,7 @@
             app:layout_constraintEnd_toStartOf="@+id/item_head_title" />
 
         <!-- Title -->
-        <com.orgzly.android.ui.views.TextViewWithMarkup
+        <com.orgzly.android.ui.views.EditTextWithMarkup
             android:id="@+id/item_head_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
