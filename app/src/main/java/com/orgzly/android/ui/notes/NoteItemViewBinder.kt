@@ -101,7 +101,13 @@ class NoteItemViewBinder(private val context: Context, private val inBook: Boole
     }
 
     private fun setupTitle(holder: NoteItemViewHolder, noteView: NoteView) {
-        holder.binding.itemHeadTitle.setText(generateTitle(noteView))
+        holder.binding.itemHeadTitle.apply {
+            setText(generateTitle(noteView))
+            setOnEditorActionListener { v, actionId, event ->
+                println("Enter key pressed")
+                true
+            }
+        }
     }
 
     fun generateTitle(noteView: NoteView): CharSequence {

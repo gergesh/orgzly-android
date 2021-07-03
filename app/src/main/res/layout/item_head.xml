@@ -89,6 +89,7 @@
             android:textSize="?attr/item_head_title_text_size"
             android:alpha="@{alpha}"
             android:background="@android:color/transparent"
+            android:inputType="text"
             app:layout_constraintTop_toBottomOf="@id/item_head_top"
             app:layout_constraintStart_toEndOf="@+id/item_head_bullet"
             app:layout_constraintEnd_toStartOf="@+id/item_head_fold_button_text"
